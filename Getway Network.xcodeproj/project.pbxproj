@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5219E265273E5E5600AB8B3D /* Getway_NetworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219E264273E5E5600AB8B3D /* Getway_NetworkApp.swift */; };
+		5219E267273E5E5600AB8B3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219E266273E5E5600AB8B3D /* ContentView.swift */; };
+		5219E269273E5E5700AB8B3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5219E268273E5E5700AB8B3D /* Assets.xcassets */; };
+		5219E26C273E5E5700AB8B3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5219E26B273E5E5700AB8B3D /* Preview Assets.xcassets */; };
+		5219E278273E653600AB8B3D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219E277273E653600AB8B3D /* ImagePicker.swift */; };
+		5219E27B273E656D00AB8B3D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219E27A273E656D00AB8B3D /* LoginView.swift */; };
+		5219E285273E678400AB8B3D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219E284273E678400AB8B3D /* CustomTextField.swift */; };
+		5219E287273E679100AB8B3D /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219E286273E679100AB8B3D /* CustomSecureField.swift */; };
+		52816928273ED932005A7C31 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52816927273ED932005A7C31 /* RegistrationView.swift */; };
+		5281692F273EECA6005A7C31 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281692E273EECA6005A7C31 /* LazyView.swift */; };
+		52816932273EEF18005A7C31 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 52816931273EEF18005A7C31 /* FirebaseAuth */; };
+		52816934273EEF18005A7C31 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 52816933273EEF18005A7C31 /* FirebaseFirestore */; };
+		52816936273EEF18005A7C31 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 52816935273EEF18005A7C31 /* FirebaseFunctions */; };
+		52816938273EEF18005A7C31 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 52816937273EEF18005A7C31 /* FirebaseMessaging */; };
+		5281693A273EEF18005A7C31 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 52816939273EEF18005A7C31 /* FirebaseStorage */; };
+		5281693D273EF03C005A7C31 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5281693C273EF03C005A7C31 /* Kingfisher */; };
+		5281693F273EF076005A7C31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5281693E273EF076005A7C31 /* GoogleService-Info.plist */; };
+		52816941273EF57B005A7C31 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52816940273EF57B005A7C31 /* AuthViewModel.swift */; };
+		52816944273EFAED005A7C31 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52816943273EFAED005A7C31 /* SplashScreen.swift */; };
+		52816948273EFFB6005A7C31 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52816947273EFFB6005A7C31 /* HomeView.swift */; };
+		5281694B273F0276005A7C31 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281694A273F0276005A7C31 /* ImageUploader.swift */; };
+		5281694D273F0D9D005A7C31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281694C273F0D9D005A7C31 /* User.swift */; };
+		52D245CE273F0FDA002FD3C5 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D245CD273F0FDA002FD3C5 /* SearchViewModel.swift */; };
+		52D245D1273F1054002FD3C5 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D245D0273F1054002FD3C5 /* UserListView.swift */; };
+		52D245D4273F106E002FD3C5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D245D2273F106E002FD3C5 /* SearchView.swift */; };
+		52D245D5273F106E002FD3C5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D245D3273F106E002FD3C5 /* SearchBar.swift */; };
+		52D245D7273F10ED002FD3C5 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D245D6273F10ED002FD3C5 /* UserCell.swift */; };
+		52D245DA273F112A002FD3C5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D245D9273F112A002FD3C5 /* ProfileView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5219E261273E5E5600AB8B3D /* Getway Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Getway Network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5219E264273E5E5600AB8B3D /* Getway_NetworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Getway_NetworkApp.swift; sourceTree = "<group>"; };
+		5219E266273E5E5600AB8B3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5219E268273E5E5700AB8B3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5219E26B273E5E5700AB8B3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5219E272273E608D00AB8B3D /* Getway-Network-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Getway-Network-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5219E277273E653600AB8B3D /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5219E27A273E656D00AB8B3D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5219E284273E678400AB8B3D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		5219E286273E679100AB8B3D /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		52816927273ED932005A7C31 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		5281692E273EECA6005A7C31 /* LazyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		5281693E273EF076005A7C31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52816940273EF57B005A7C31 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		52816943273EFAED005A7C31 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		52816947273EFFB6005A7C31 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5281694A273F0276005A7C31 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		5281694C273F0D9D005A7C31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		52D245CD273F0FDA002FD3C5 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		52D245D0273F1054002FD3C5 /* UserListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		52D245D2273F106E002FD3C5 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchView.swift; path = ../../../../../../../../Downloads/InstagramSwiftUIResources/View/Search/SearchView.swift; sourceTree = "<group>"; };
+		52D245D3273F106E002FD3C5 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		52D245D6273F10ED002FD3C5 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		52D245D9273F112A002FD3C5 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5219E25E273E5E5600AB8B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5281693D273EF03C005A7C31 /* Kingfisher in Frameworks */,
+				52816938273EEF18005A7C31 /* FirebaseMessaging in Frameworks */,
+				52816936273EEF18005A7C31 /* FirebaseFunctions in Frameworks */,
+				52816932273EEF18005A7C31 /* FirebaseAuth in Frameworks */,
+				5281693A273EEF18005A7C31 /* FirebaseStorage in Frameworks */,
+				52816934273EEF18005A7C31 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5219E258273E5E5600AB8B3D = {
+			isa = PBXGroup;
+			children = (
+				5219E263273E5E5600AB8B3D /* Getway Network */,
+				5219E262273E5E5600AB8B3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5219E262273E5E5600AB8B3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5219E261273E5E5600AB8B3D /* Getway Network.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5219E263273E5E5600AB8B3D /* Getway Network */ = {
+			isa = PBXGroup;
+			children = (
+				52816949273F0266005A7C31 /* API */,
+				5219E279273E655E00AB8B3D /* View */,
+				5219E274273E646500AB8B3D /* Utils */,
+				5219E273273E641500AB8B3D /* Model */,
+				5219E272273E608D00AB8B3D /* Getway-Network-Info.plist */,
+				5281693E273EF076005A7C31 /* GoogleService-Info.plist */,
+				5219E264273E5E5600AB8B3D /* Getway_NetworkApp.swift */,
+				5219E266273E5E5600AB8B3D /* ContentView.swift */,
+				5219E268273E5E5700AB8B3D /* Assets.xcassets */,
+				5219E26A273E5E5700AB8B3D /* Preview Content */,
+			);
+			path = "Getway Network";
+			sourceTree = "<group>";
+		};
+		5219E26A273E5E5700AB8B3D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5219E26B273E5E5700AB8B3D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5219E273273E641500AB8B3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5281694C273F0D9D005A7C31 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5219E274273E646500AB8B3D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5281692E273EECA6005A7C31 /* LazyView.swift */,
+				5219E277273E653600AB8B3D /* ImagePicker.swift */,
+				5219E284273E678400AB8B3D /* CustomTextField.swift */,
+				5219E286273E679100AB8B3D /* CustomSecureField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5219E279273E655E00AB8B3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52D245D8273F1121002FD3C5 /* Profile */,
+				52D245CF273F1044002FD3C5 /* Items */,
+				52816942273EFADA005A7C31 /* SplashScreen */,
+				52816929273EEC69005A7C31 /* Search */,
+				5219E27C273E657100AB8B3D /* Authentication */,
+				52816947273EFFB6005A7C31 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5219E27C273E657100AB8B3D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5219E27A273E656D00AB8B3D /* LoginView.swift */,
+				52816927273ED932005A7C31 /* RegistrationView.swift */,
+				52816940273EF57B005A7C31 /* AuthViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		52816929273EEC69005A7C31 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				52D245D3273F106E002FD3C5 /* SearchBar.swift */,
+				52D245D2273F106E002FD3C5 /* SearchView.swift */,
+				52D245CD273F0FDA002FD3C5 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		52816942273EFADA005A7C31 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				52816943273EFAED005A7C31 /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		52816949273F0266005A7C31 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5281694A273F0276005A7C31 /* ImageUploader.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		52D245CF273F1044002FD3C5 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				52D245D6273F10ED002FD3C5 /* UserCell.swift */,
+				52D245D0273F1054002FD3C5 /* UserListView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		52D245D8273F1121002FD3C5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				52D245D9273F112A002FD3C5 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5219E260273E5E5600AB8B3D /* Getway Network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5219E26F273E5E5700AB8B3D /* Build configuration list for PBXNativeTarget "Getway Network" */;
+			buildPhases = (
+				5219E25D273E5E5600AB8B3D /* Sources */,
+				5219E25E273E5E5600AB8B3D /* Frameworks */,
+				5219E25F273E5E5600AB8B3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Getway Network";
+			packageProductDependencies = (
+				52816931273EEF18005A7C31 /* FirebaseAuth */,
+				52816933273EEF18005A7C31 /* FirebaseFirestore */,
+				52816935273EEF18005A7C31 /* FirebaseFunctions */,
+				52816937273EEF18005A7C31 /* FirebaseMessaging */,
+				52816939273EEF18005A7C31 /* FirebaseStorage */,
+				5281693C273EF03C005A7C31 /* Kingfisher */,
+			);
+			productName = "Getway Network";
+			productReference = 5219E261273E5E5600AB8B3D /* Getway Network.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5219E259273E5E5600AB8B3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					5219E260273E5E5600AB8B3D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 5219E25C273E5E5600AB8B3D /* Build configuration list for PBXProject "Getway Network" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5219E258273E5E5600AB8B3D;
+			packageReferences = (
+				52816930273EEF18005A7C31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5281693B273EF03C005A7C31 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 5219E262273E5E5600AB8B3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5219E260273E5E5600AB8B3D /* Getway Network */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5219E25F273E5E5600AB8B3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5219E26C273E5E5700AB8B3D /* Preview Assets.xcassets in Resources */,
+				5219E269273E5E5700AB8B3D /* Assets.xcassets in Resources */,
+				5281693F273EF076005A7C31 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5219E25D273E5E5600AB8B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52816944273EFAED005A7C31 /* SplashScreen.swift in Sources */,
+				5219E287273E679100AB8B3D /* CustomSecureField.swift in Sources */,
+				5219E278273E653600AB8B3D /* ImagePicker.swift in Sources */,
+				52D245D1273F1054002FD3C5 /* UserListView.swift in Sources */,
+				5219E267273E5E5600AB8B3D /* ContentView.swift in Sources */,
+				52D245D5273F106E002FD3C5 /* SearchBar.swift in Sources */,
+				52816928273ED932005A7C31 /* RegistrationView.swift in Sources */,
+				52D245D4273F106E002FD3C5 /* SearchView.swift in Sources */,
+				5281694B273F0276005A7C31 /* ImageUploader.swift in Sources */,
+				52D245CE273F0FDA002FD3C5 /* SearchViewModel.swift in Sources */,
+				5281694D273F0D9D005A7C31 /* User.swift in Sources */,
+				5219E285273E678400AB8B3D /* CustomTextField.swift in Sources */,
+				5219E27B273E656D00AB8B3D /* LoginView.swift in Sources */,
+				5281692F273EECA6005A7C31 /* LazyView.swift in Sources */,
+				52D245D7273F10ED002FD3C5 /* UserCell.swift in Sources */,
+				5219E265273E5E5600AB8B3D /* Getway_NetworkApp.swift in Sources */,
+				52D245DA273F112A002FD3C5 /* ProfileView.swift in Sources */,
+				52816948273EFFB6005A7C31 /* HomeView.swift in Sources */,
+				52816941273EF57B005A7C31 /* AuthViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5219E26D273E5E5700AB8B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5219E26E273E5E5700AB8B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5219E270273E5E5700AB8B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Getway Network/Preview Content\"";
+				DEVELOPMENT_TEAM = XSZFJ49W7G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Getway-Network-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recore.Getway-Network";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5219E271273E5E5700AB8B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Getway Network/Preview Content\"";
+				DEVELOPMENT_TEAM = XSZFJ49W7G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Getway-Network-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recore.Getway-Network";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5219E25C273E5E5600AB8B3D /* Build configuration list for PBXProject "Getway Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5219E26D273E5E5700AB8B3D /* Debug */,
+				5219E26E273E5E5700AB8B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5219E26F273E5E5700AB8B3D /* Build configuration list for PBXNativeTarget "Getway Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5219E270273E5E5700AB8B3D /* Debug */,
+				5219E271273E5E5700AB8B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52816930273EEF18005A7C31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		5281693B273EF03C005A7C31 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52816931273EEF18005A7C31 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52816930273EEF18005A7C31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		52816933273EEF18005A7C31 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52816930273EEF18005A7C31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		52816935273EEF18005A7C31 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52816930273EEF18005A7C31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		52816937273EEF18005A7C31 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52816930273EEF18005A7C31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		52816939273EEF18005A7C31 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52816930273EEF18005A7C31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5281693C273EF03C005A7C31 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5281693B273EF03C005A7C31 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5219E259273E5E5600AB8B3D /* Project object */;
+}
